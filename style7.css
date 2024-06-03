@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background: #D1D2D2; /* Changed background color */
+    color: #333;
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content horizontally */
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; 
+    background: #B2BABB; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px; 
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a {
+    font-size: 16px; 
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px; 
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00abf0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-myself {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-myself a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-myself a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-myself {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-parent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-parent a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-parent a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-parent {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-sibling {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-sibling a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-sibling a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-sibling {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-favourite {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-favourite a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-favourite a:hover {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown:hover .dropdown-favourite {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+Audio {
+     display : none; 
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin: 10px 0;
+}
+
+main ul li strong {
+    font-weight: bold;
+}
+
+/* Specific Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Movie List Styles */
+.movie-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+.movie-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.movie-list li img {
+    width: 50px; /* Adjust image size as needed */
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.movie-list li h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Hover effect */
+.movie-list li:hover {
+    background-color: #e5e5e5;
+}
+
+footer {
+    margin-top: auto; 
+    margin-bottom: -100px; 
+    background: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 32px 0;
+    width: 100%;
+    border-top: 1px solid #fff; 
+    box-sizing: border-box; 
+}
+
+.social-links a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #00abf0; 
+}

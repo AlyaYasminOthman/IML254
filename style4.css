@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    background: #D1D2D2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; 
+    background: #B2BABB; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px; 
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a {
+    font-size: 16px; 
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px; 
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00abf0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-myself {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-myself a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-myself a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-myself {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-parent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-parent a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-parent a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-parent {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-sibling {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-sibling a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-sibling a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-sibling {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-favourite {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-favourite a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-favourite a:hover {
+    background-color: #00abf0;
+    color: white;
+}
+
+.dropdown:hover .dropdown-favourite {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00abf0;
+    color: white;
+}
+
+Audio {
+     display : none; 
+}
+
+.sibling {
+    margin-top: 100px;
+    padding: 20px 10%;
+}
+
+.sibling-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sibling-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.sibling-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sibling-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.images {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+main {
+    flex: 1;
+    padding: 20px 10%;
+}
+
+#hobbies {
+    margin-top: 50px;
+}
+
+#hobbies h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hobby {
+    margin-bottom: 20px;
+}
+
+.hobby h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    font-size: 18px;
+    color: #666;
+}
+
+.slider {
+    position: relative;
+    max-width: 200px; 
+    margin: 40px auto 0; 
+}
+
+.slide-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid #FF33CA;
+    display: none;
+}
+
+.sleeping-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sleeping-images img {
+    width: calc(25% - 10px); /* Adjust the width of the images */
+    max-width: 200px; /* Set a maximum width for the images */
+    height: auto;
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+.makeup-images img {
+    width: calc(25% - 10px); /* Adjust the width of the images */
+    max-width: 200px; /* Set a maximum width for the images */
+    height: auto;
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+
+footer {
+    margin-top: auto; 
+    margin-bottom: -100px; 
+    background: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 32px 0;
+    width: 100%;
+    border-top: 1px solid #fff; 
+    box-sizing: border-box; 
+}
+
+.social-links a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #00abf0; 
+}
