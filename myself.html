@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap">
+    <style>
+        pre {
+            font-family: 'Lora', serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Alyayas</a>
+
+        <nav class="nav">
+            <a href="index.html" class="">Home</a>
+            <div class="dropdown">
+                <a href="myself.html" class="dropbtn">Myself</a>
+                <div class="dropdown-myself">
+                    <a href="#bio">Biodata</a>
+                    <a href="#bck">Back-story</a>
+                    <a href="#cntct">Contact</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="parent.html" class="dropbtn">Parent</a>
+                <div class="dropdown-parent">
+                    <a href="#Dad">Dad</a>
+                    <a href="#Mom">Mom</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="sibling.html" class="dropbtn">Sibling</a>
+                <div class="dropdown-sibling">
+                    <a href="#Kak Long">Along</a>
+                    <a href="#Abg Ngah">Angah</a>
+                    <a href="#Abd De">Uda</a>
+                </div>
+            </div>
+            <a href="hobby.html">Hobbies</a>
+            <a href="friend.html">Friends</a>
+            <a href="uni.html">University</a>
+            </div>
+            <div class="dropdown">
+            <a href="fav.html" class="dropbtn">Favourite</a>
+                <div class="dropdown-favourite">
+                    <a href="#music">Music</a>
+                    <a href="#yt">YouTube</a>
+                    <a href="#movie">Movie</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<audio id="background-audio" controls loop>
+    <source src="audio/elivening.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+        
+        // Play audio on user interaction
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.log('Play triggered but still prevented:', error);
+            });
+        });
+    });
+</script>
+
+ <section id="intro">
+    <h2><a name="bio">About Alyayas</h2>
+    <div class="gallery-videos" align="center">
+        <video controls width="350" height="250">
+            <source src="video/me4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="intro-content">
+        <div class="images">
+            <img src="image/myself1.jpeg" alt="Alyayas">
+        </div>
+    <div class="biodata">
+        <table cellpadding="30">
+            <tr>
+                <th>Full Name</th>
+                <td>Nur Alya Yasmin Binti Othman</td>
+            </tr>
+            <tr>
+                <th>Nickname</th>
+                <td>Alya Yasmin</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>March 3, 2004</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td>Malaysian</td>
+            </tr>
+            <tr>
+                <th>Hometown</th>
+                <td>Terengganu</td>
+            </tr>
+            <tr>
+                <th>Zodiac Sign</th>
+                <td>Pisces</td>
+            </tr>
+            <tr>
+                <th>MBTI</th>
+                <td>INFJ-T</td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>Reading, eating, makeup, and sleeping</td>
+            </tr>
+        </table>
+<br>
+        <p>This is a brief introduction about myself. I am now a 4th semester student at the University Teknologi Mara (UiTM), Kedah branch. It's hard to be far away from home but I know I had to do it for my future.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Alyayas Gallery</h2>
+    <div class="gallery-images" align="center">
+        <img src="image/myself4.jpeg" alt="Gallery Image 1">
+        <img src="image/myself5.jpeg" alt="Gallery Image 2">
+        <img src="image/myself7.jpeg" alt="Gallery Image 3">
+        <img src="image/myself8.jpeg" alt="Gallery Image 4">
+        <img src="image/myself1.jpeg" alt="Gallery Image 5">
+        <img src="image/makeup1.jpeg" alt="Gallery Image 1">
+        <img src="image/makeup2.jpeg" alt="Gallery Image 2">
+        <img src="image/makeup3.jpeg" alt="Gallery Image 3">
+        <img src="image/makeup4.jpeg" alt="Gallery Image 3">
+    </div>
+    <div class="gallery-videos" align="center">
+        <video controls width="300" height="200">
+            <source src="video/me1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls width="300" height="200">
+            <source src="video/me2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls width="300" height="200">
+            <source src="video/me.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+    <section>
+    <h2><a name="bck">Back-story of Alyayas</h2>
+      <div class="content">
+        <div class="images">
+            <img src="image/myself3.jpeg" alt="Alyayas">
+        </div>
+
+        <pre>
+When I was a child, I was called the extrovert because i was the one 
+that always start a conversation with new people. I also didn't care 
+what others said to me.not until I was entring highschool.
+
+	In highschool, I'm started feeling shy and hesitant in social 
+situations,especially when meeting new people. But when I was 
+comfortable with someone, I don't shy to often anymore. I also 
+easily can cry at anything at this time.
+
+	Now I'm in univeristy, I still do feeling a little bit shy if I talk 
+with new people. But it is better than I was in highschool. On the 
+odd occasion I choose not to talk to anyone and I just sit and observe 
+their action and the way people speak just to know their personality.
+        </pre>
+      </div>
+    </section>
+
+  <section id="contact">
+      <div>
+        <div class="images">
+            <img src="image/myself6.jpeg" alt="Alyayas">
+        </div>
+
+    <h2><a name="cntct">Contact Me</h2>
+    <ul>
+      <li>Email: nuralyayasmin2017@gmail.com.com</li>
+      <li>iCloud: alyayasin0546@icloud.com
+      <li>Phone: 01125437016</li>
+      <li><p>My social media is at the bottom of the page. Thank you!!</p></li>
+    </ul>
+  </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/alyayasmiin_?igsh=bGN6djljNTRkM3l0"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.tiktok.com/@liliesnoww?_t=8mEGXjmywUS&_r=1"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <span>© 2024 Alya Yasmin. All Rights Reserved.</span>
+    </footer>
+
+</body>
+</html>

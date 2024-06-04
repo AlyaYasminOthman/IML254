@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Alyayas</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="myself.html" class="dropbtn">Myself</a>
+                <div class="dropdown-myself">
+                    <a href="#bio">Biodata</a>
+                    <a href="#bck">Back-story</a>
+                    <a href="#cntct">Contact</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="parent.html" class="dropbtn">Parent</a>
+                <div class="dropdown-parent">
+                    <a href="#Dad">Dad</a>
+                    <a href="#Mom">Mom</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="sibling.html" class="dropbtn">Sibling</a>
+                <div class="dropdown-sibling">
+                    <a href="#Kak Long">Along</a>
+                    <a href="#Abg Ngah">Angah</a>
+                    <a href="#Abd De">Uda</a>
+                </div>
+            </div>
+            <a href="hobby.html">Hobbies</a>
+            <a href="friend.html">Friends</a>
+            <a href="uni.html">University</a>
+            </div>
+            <div class="dropdown">
+            <a href="fav.html" class="dropbtn">Favourite</a>
+                <div class="dropdown-favourite">
+                    <a href="#music">Music</a>
+                    <a href="#yt">YouTube</a>
+                    <a href="#movie">Movie</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+<audio id="background-audio" controls loop>
+    <source src="audio/elivening.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+        
+        // Play audio on user interaction
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.log('Play triggered but still prevented:', error);
+            });
+        });
+    });
+</script>
+
+    <main>
+        <section id="hobbies">
+            <h1>My Hobbies</h1>
+            <div class="hobby">
+                <h2>Reading</h2>
+                <p>Reading is one of my favorite pastimes. I enjoy immersing myself in different worlds through books, exploring various genres from fantasy to non-fiction. It allows me to gain knowledge and expand my imagination. Like while writting this I already purchase one more book for me to read in dormitory.</p>
+<br>
+		<p>Sometimes I feels like I want to be the main chracter in the books or novels that I read. It's also make me wonder what if the characters is real, what would it feels like. by ready it makes me more curious on wanting to know what happen on the next chapter.I aslo don't mind reading it through a physical book or e-book I enjoy both.<p>
+                <div class="reading-images" align="center">
+                    <img src="image/book1.jpeg" alt="Reading Image 1">
+                    <img src="image/book2.jpeg" alt="Reading Image 2">
+                    <img src="image/book3.jpeg" alt="Reading Image 3">
+                    <img src="image/book4.jpeg" alt="Reading Image 4">
+                    <img src="image/book5.jpeg" alt="Reading Image 5">
+                    <img src="image/book6.jpeg" alt="Reading Image 6">
+		<p>I LOVE READING <3</p>
+                </div>
+            </div>
+
+            <div class="hobby">
+                <h2>Eating</h2>
+                <p>Eating is another hobby I cherish. I love trying out new foods, exploring different cuisines, and discovering unique flavors. It's a delightful experience that brings joy and satisfaction.</p>
+<br>
+		<p>I also like to try a new place, like a new cafe just open then I will there and try the food. If the food is delicious, obviously I will eat again at that place. I'm not a picky eater but I do have a few things that i can't eat and one of it is catfish. Other than that I can enjoy all of it without worries.</p>
+            <div class="slider" align="center">
+                <img src="image/food1.jpeg" class="slide-photo" alt="My Photo 1">
+                <img src="image/food2.jpeg" class="slide-photo" alt="My Photo 2">
+                <img src="image/food3.jpeg" class="slide-photo" alt="My Photo 3">
+                <img src="image/food4.jpeg" class="slide-photo" alt="My Photo 4">
+                <img src="image/food5.jpeg" class="slide-photo" alt="My Photo 5">
+                <img src="image/food6.jpeg" class="slide-photo" alt="My Photo 6">
+                <img src="image/food7.jpeg" class="slide-photo" alt="My Photo 7">
+                <img src="image/food8.jpeg" class="slide-photo" alt="My Photo 8">
+                <img src="image/food9.jpeg" class="slide-photo" alt="My Photo 9">
+		<p>FOOD FOR LIFE ♥</p>
+            </div>
+        </div>
+    </div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide-photo");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+            <div class="hobby">
+                <h2>Sleeping</h2>
+                <p>Though it might sound simple, sleeping is essential for my well-being. It helps me recharge and maintain my mental and physical health. I value a good night's sleep and often enjoy naps during the day.</p>
+<br>
+		<p>Sometimes if I'm not in the mood, mad, or sick, all I need is just sleep. Sleep is my passion.Me and sleep cannot be separated. I will be mad if i didn't get enough sleep. Lately, I can feel that I became a light sleeper because with a little sound I already woke up. My roommates now move carefully if they saw that I already asleep because they afraid to woke me up</p>
+
+                <div class="sleeping-images" align="center">
+                    <img src="image/myself2.jpeg" alt="Sleeping Image 1">
+                    <img src="image/myself9.jpeg" alt="Sleeping Image 2">
+                    <img src="image/myself10.jpeg" alt="Sleeping Image 3">
+                    <img src="image/myself11.jpeg" alt="Sleeping Image 4">
+		<p>SLEEPING IS MY PASSION ♥</p>
+                </div>
+            </div>
+
+            <div class="hobby">
+                <h2>Makeup</h2>
+                <p>Makeup is a creative outlet for me. I enjoy experimenting with different looks, trying out new products, and enhancing my features. It's a fun way to express myself and boost my confidence.</p>
+<br>
+		<p>I also did makeup when I was boring. Sometimes my friend will be a model for me to try new makeup style. Usually I like to make the makeup look natural just like it is your own skin and it doesn't looks like you where any makeup.</p>
+		<p>With makeup I can hide my acne scar, but I rarely have anacne scar on my face.</p>
+
+            <div class="makeup-images" align="center">
+                <img src="image/makeup1.jpeg" alt="My Photo 1">
+                <img src="image/makeup2.jpeg" alt="My Photo 2">
+                <img src="image/makeup3.jpeg" alt="My Photo 3">
+                <img src="image/makeup4.jpeg" alt="My Photo 4">
+		<p></p>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/alyayasmiin_?igsh=bGN6djljNTRkM3l0"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.tiktok.com/@liliesnoww?_t=8mEGXjmywUS&_r=1"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <span>© 2024 Alya Yasmin. All Rights Reserved.</span>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Alyayas</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="myself.html" class="dropbtn">Myself</a>
+                <div class="dropdown-myself">
+                    <a href="#bio">Biodata</a>
+                    <a href="#bck">Back-story</a>
+                    <a href="#cntct">Contact</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="parent.html" class="dropbtn">Parent</a>
+                <div class="dropdown-parent">
+                    <a href="#Dad">Dad</a>
+                    <a href="#Mom">Mom</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <a href="sibling.html" class="dropbtn">Sibling</a>
+                <div class="dropdown-sibling">
+                    <a href="#Kak Long">Along</a>
+                    <a href="#Abg Ngah">Angah</a>
+                    <a href="#Abd De">Uda</a>
+                </div>
+            </div>
+            <a href="hobby.html">Hobbies</a>
+            <a href="friend.html">Friends</a>
+            <a href="uni.html">University</a>
+            </div>
+            <div class="dropdown">
+            <a href="fav.html" class="dropbtn">Favourite</a>
+                <div class="dropdown-favourite">
+                    <a href="#music">Music</a>
+                    <a href="#yt">YouTube</a>
+                    <a href="#movie">Movie</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<audio id="background-audio" controls loop>
+    <source src="audio/elivening.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+        
+        // Play audio on user interaction
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.log('Play triggered but still prevented:', error);
+            });
+        });
+    });
+</script>
+
+
+    <section class="friends">
+        <div class="friends-content">
+            <h1>My Friends</h1>
+            <h3 align="center">Friends from different stages of my life</h3>
+            <p align="center">"Friendship is the hardest thing in the world to explain. It's not something you learn in school. But if you haven't learned the meaning of friendship, you really haven't learned anything." — Muhammad Ali</p>
+
+            <div class="friend-group">
+                <h2 align="center">Primary School Friends</h2>
+                <p align="center">These are my friends from primary school, who I've known since childhood. We've shared many memorable moments together.These are three of my friends that I still in touch and close. We know each other from kinder garden and we enter the same primary school but not highschool, but thats fine we still in a good term</p>
+                <div class="friend-images" align="center">
+                    <img src="image/primary1.jpeg" alt="Primary School Friend 1">
+                    <img src="image/primary2.jpeg" alt="Primary School Friend 2">
+                    <img src="image/primary3.jpeg" alt="Primary School Friend 3">
+                </div>
+            </div>
+
+            <div class="friend-group">
+                <h2 align="center">High School Friends</h2>
+                <p align="center">High school was a special time with a lot of growth and fun. These friends have seen me through my teenage years.I have many friends in highschool but some of it we lost in touch, so these are a few are my friend that I still in touch and update anything to them.</p>
+                <div class="friend-images" align="center">
+                    <img src="image/highschool1.jpeg" alt="High School Friend 1">
+                    <img src="image/highschool2.jpeg" alt="High School Friend 2">
+                    <img src="image/highschool3.jpeg" alt="High School Friend 3">
+                    <img src="image/highschool4.jpeg" alt="High School Friend 4">
+                    <img src="image/highschool5.jpeg" alt="High School Friend 5">
+                </div>
+            </div>
+
+            <div class="friend-group">
+                <h2 align="center">University Friends</h2>
+                <p align="center">At university, I made new friends who share my interests and career aspirations. We've supported each other through our studies.</p>
+                <div class="friend-images" align="center">
+                    <img src="image/university1.jpeg" alt="University Friend 1">
+                    <img src="image/university2.jpeg" alt="University Friend 2">
+                    <img src="image/university3.jpeg" alt="University Friend 3">
+                    <img src="image/university4.jpeg" alt="University Friend 4">
+                    <img src="image/university5.jpeg" alt="University Friend 5">
+                    <img src="image/university6.jpeg" alt="University Friend 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<br>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/alyayasmiin_?igsh=bGN6djljNTRkM3l0"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.tiktok.com/@liliesnoww?_t=8mEGXjmywUS&_r=1"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <span>© 2024 Alya Yasmin. All Rights Reserved.</span>
+    </footer>
+</body>
+</html>
